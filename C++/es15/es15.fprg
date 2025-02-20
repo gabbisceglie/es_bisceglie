@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="es6"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-09 08:45:39 "/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLVVORDdBNTA7MjAyNS0wMS0wOTsiMDg6MTU6MzcgIjsyNjQ4"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLVVORDdBNTA7MjAyNS0wMS0wOTsiMDg6NDU6MzkgIjsxOzI3NjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, media, n, somma" type="Real" array="False" size=""/>
+            <assign variable="somma" expression="0"/>
+            <assign variable="n" expression="0"/>
+            <do expression="num!=0">
+                <output expression="&quot;Inserisci un numero a piacere&quot;" newline="True"/>
+                <input variable="num"/>
+                <if expression="num&gt;0">
+                    <then>
+                        <assign variable="somma" expression="somma+num"/>
+                        <assign variable="n" expression="n+1"/>
+                    </then>
+                    <else/>
+                </if>
+            </do>
+            <assign variable="media" expression="somma/n"/>
+            <output expression="&quot;La media dei numeri &#232; &quot; &amp; media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="es6"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-22 05:08:19 "/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLVVORDdBNTA7MjAyNS0wMS0wOTsiMDg6MTU6MzcgIjsyNjQ4"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLVVORDdBNTA7MjAyNS0wMS0yMjsiMDU6MDg6MTkgIjsxMDsyNzk4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, media, n, somman, sommap, max, min" type="Real" array="False" size=""/>
+            <assign variable="somman" expression="0"/>
+            <assign variable="sommap" expression="0"/>
+            <assign variable="n" expression="0"/>
+            <do expression="num!=0">
+                <output expression="&quot;Inserisci un numero a piacere&quot;" newline="True"/>
+                <input variable="num"/>
+                <if expression="n=0">
+                    <then>
+                        <assign variable="max" expression="num"/>
+                        <assign variable="min" expression="num"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="num&gt;0">
+                    <then>
+                        <assign variable="sommap" expression="sommap+num"/>
+                        <assign variable="n" expression="n+1"/>
+                    </then>
+                    <else>
+                        <assign variable="somman" expression="somman+num"/>
+                    </else>
+                </if>
+                <if expression="num&gt;max">
+                    <then>
+                        <assign variable="max" expression="num"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="num&lt;min">
+                    <then>
+                        <if expression="num=0">
+                            <then/>
+                            <else>
+                                <assign variable="min" expression="num"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+            </do>
+            <if expression="n==0">
+                <then/>
+                <else>
+                    <assign variable="media" expression="sommap/n"/>
+                    <output expression="&quot;La media dei numeri positivi &#232; &quot; &amp; media" newline="True"/>
+                </else>
+            </if>
+            <output expression="&quot;La somma dei numeri negativi &#232; &quot; &amp; somman" newline="True"/>
+            <output expression="&quot;Il numero maggiore &#232; &quot; &amp; max" newline="True"/>
+            <output expression="&quot;Il numero minore &#232; &quot; &amp; min" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

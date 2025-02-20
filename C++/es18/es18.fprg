@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="es18"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-05 06:01:06 "/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLVVORDdBNTA7MjAyNS0wMi0wNTsiMDQ6NTU6MTAgIjsyNjM2"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLVVORDdBNTA7MjAyNS0wMi0wNTsiMDY6MDE6MDYgIjsxOzI3NDI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, n, pari" type="Integer" array="False" size=""/>
+            <assign variable="n" expression="0"/>
+            <assign variable="pari" expression="0"/>
+            <do expression="n!=5">
+                <output expression="&quot;Inserisci un numero&quot;" newline="True"/>
+                <input variable="num"/>
+                <if expression="num%2=0">
+                    <then>
+                        <assign variable="n" expression="n+1"/>
+                        <assign variable="pari" expression="pari+1"/>
+                    </then>
+                    <else>
+                        <assign variable="n" expression="n+1"/>
+                    </else>
+                </if>
+            </do>
+            <output expression="&quot;Il numero dei numeri inseriti, divisibili per 2 sono: &quot; &amp; pari" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

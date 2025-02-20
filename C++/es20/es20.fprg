@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="es20"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-15 07:48:05 "/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLVVORDdBNTA7MjAyNS0wMi0xNTsiMDc6MjY6MTAgIjsyNjM4"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLVVORDdBNTA7MjAyNS0wMi0xNTsiMDc6NDg6MDUgIjsxOzI3NTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, num, i2, ni, n" type="Integer" array="False" size=""/>
+            <assign variable="ni" expression="0"/>
+            <assign variable="i2" expression="0"/>
+            <output expression="&quot;Quanti numeri vuoi inserire?&quot;" newline="True"/>
+            <input variable="i"/>
+            <output expression="&quot;Che numero vuoi contare? &quot;" newline="True"/>
+            <input variable="n"/>
+            <do expression="i&gt;i2">
+                <output expression="&quot;Inserisci numero: &quot;" newline="True"/>
+                <input variable="num"/>
+                <if expression="num==n">
+                    <then>
+                        <assign variable="ni" expression="ni+1"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="i2" expression="i2+1"/>
+            </do>
+            <output expression="&quot;Il numero &quot; &amp; n &amp; &quot; appare ben &quot; &amp; ni &amp; &quot;volte!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

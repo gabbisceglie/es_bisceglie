@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="es21"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-02 05:37:48 "/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLVVORDdBNTA7MjAyNS0wMy0wMjsiMDM6NDc6NTMgIjsyNjQx"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLVVORDdBNTA7MjAyNS0wMy0wMjsiMDU6Mzc6NDggIjsxOzI3NTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="prezzo, somma, finale" type="Real" array="False" size=""/>
+            <declare name="nprodotti, n, sconto" type="Integer" array="False" size=""/>
+            <assign variable="somma" expression="0"/>
+            <assign variable="n" expression="0"/>
+            <output expression="&quot;Inserire numero prodotti: &quot;" newline="True"/>
+            <input variable="nprodotti"/>
+            <do expression="nprodotti&gt;n">
+                <output expression="&quot;Inserire prezzo prodotto: &quot;" newline="True"/>
+                <input variable="prezzo"/>
+                <assign variable="somma" expression="somma+prezzo"/>
+                <assign variable="n" expression="n+1"/>
+            </do>
+            <if expression="somma&gt;=100">
+                <then>
+                    <assign variable="finale" expression="somma-(20/100*somma)"/>
+                    <assign variable="sconto" expression="20"/>
+                </then>
+                <else>
+                    <if expression="somma&gt;50 and somma&lt;100">
+                        <then>
+                            <assign variable="finale" expression="somma-(10/100*somma)"/>
+                            <assign variable="sconto" expression="10"/>
+                        </then>
+                        <else>
+                            <if expression="somma&lt;=50">
+                                <then>
+                                    <assign variable="finale" expression="somma"/>
+                                    <assign variable="sconto" expression="0"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Il prezzo da pagare senza sconto e' &quot; &amp; somma" newline="True"/>
+            <if expression="sconto!=0">
+                <then>
+                    <output expression="&quot;Il prezzo da pagare con lo sconto, e' &quot; &amp; finale" newline="True"/>
+                    <output expression="&quot;La percentuale di sconto applicata &#232; &quot; &amp; sconto &amp; &quot;%&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Lo sconto non e' stato applicato&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

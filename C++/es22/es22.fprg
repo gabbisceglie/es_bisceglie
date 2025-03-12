@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="es22"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-12 04:52:34 "/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLVVORDdBNTA7MjAyNS0wMy0xMjsiMDQ6NDk6MTEgIjsyNjM5"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLVVORDdBNTA7MjAyNS0wMy0xMjsiMDQ6NTI6MzQgIjsxOzI3NDY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, somma" type="Integer" array="False" size=""/>
+            <assign variable="somma" expression="0"/>
+            <do expression="n&lt;=0">
+                <output expression="&quot;Inserire un numero intero positivo&quot;" newline="True"/>
+                <input variable="n"/>
+            </do>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <if expression="i%2!=0">
+                    <then>
+                        <assign variable="somma" expression="somma+i"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;La somma dei numeri dispari tra 1 e &quot; &amp; n &amp; &quot; e' &quot; &amp; somma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

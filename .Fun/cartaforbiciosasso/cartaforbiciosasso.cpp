@@ -98,3 +98,7 @@ switch (i) {
 
     return 0;
 }
+
+
+
+//da sistemare, conta il round anche se scelgo un opzione diversa da 1/2/3

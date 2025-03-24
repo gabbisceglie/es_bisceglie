@@ -1,1 +1,1 @@
-Classe "2Di" istituto "Luigi Dell'Erba" annata 25/26
+Classe "2Di" istituto "Luigi Dell'Erba" anno 25/26

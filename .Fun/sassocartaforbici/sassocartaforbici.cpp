@@ -11,9 +11,14 @@ int main() {
     //genera un opzione casuale tra 1 e 3
     srand(time(0));
 
+    cout << "\nLa partita dura 10 round, buona fortuna!"; 
 do {
-    cout << "\nLa partita dura 10 round, buona fortuna! \nInserisci " << "1" << " per iniziare la partita: ";
+    cout << "\n\nInserisci '1' per iniziare la partita: ";
     cin >> i;
+
+    if(i != 1) {
+        cout << "Errore! Inserisci " << "1" << " per iniziare la partita \n---------------------------------------------------------";
+    }
 } while (i != 1);
 
 
@@ -28,8 +33,14 @@ for (round = 0; round < 10; round++) {
         mossa2 = "Forbici";
     }
 
+do {
     cout << "\n1) Sasso\n2) Carta\n3) Forbici\nSeleziona un opzione:";
     cin >> i;
+
+    if(i < 1 || i > 3) {
+        cout << "Errore! Inserisci un numero tra 1 e 3 \n---------------------------------------------------------";
+    }
+} while (i < 1 || i > 3);
 
 switch (i) {
     case 1:
@@ -98,7 +109,3 @@ switch (i) {
 
     return 0;
 }
-
-
-
-//da sistemare, conta il round anche se scelgo un opzione diversa da 1/2/3

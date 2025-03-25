@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="es23"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-19 01:17:05 "/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLVVORDdBNTA7MjAyNS0wMy0xOTsiMTA6Mjc6MTkgIjsyNjQ3"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLVVORDdBNTA7MjAyNS0wMy0xOTsiMDE6MTc6MDUgIjsxOzI3NDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, somma" type="Integer" array="False" size=""/>
+            <assign variable="somma" expression="0"/>
+            <do expression="n&lt;=0">
+                <output expression="&quot;Inserire un numero intero positivo: &quot;" newline="True"/>
+                <input variable="n"/>
+            </do>
+            <do expression="n&gt;0">
+                <assign variable="somma" expression="somma+(n*n)"/>
+                <assign variable="n" expression="n-1"/>
+            </do>
+            <output expression="&quot;La somma &#232; &quot; &amp;somma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

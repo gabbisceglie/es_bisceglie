@@ -11,7 +11,7 @@ int main() {
     //genera un opzione casuale tra 1 e 3
     srand(time(0));
 
-    cout << "\nLa partita dura 10 round, buona fortuna!"; 
+    cout << "\n\tLa partita dura 10 round, buona fortuna! (esclusi pareggi)"; 
 do {
     cout << "\n\nInserisci '1' per iniziare la partita: ";
     cin >> i;
@@ -48,8 +48,7 @@ switch (i) {
     if (mossa == 1) {
         cout << "\nPareggio!";
         cout << "\nIl tuo avversario aveva scelto: " << mossa2;
-        p1++;
-        p2++;
+        round--;
     } else if (mossa == 2) {
         cout << "\nHai perso!";
         cout << "\nIl tuo avversario aveva scelto: " << mossa2;
@@ -68,8 +67,7 @@ switch (i) {
     if (mossa == 2) {
         cout << "\nPareggio!";
         cout << "\nIl tuo avversario aveva scelto: " << mossa2;
-        p1++;
-        p2++;
+        round--;
     } else if (mossa == 3) {
         cout << "\nHai perso!";
         cout << "\nIl tuo avversario aveva scelto: " << mossa2;
@@ -88,8 +86,7 @@ switch (i) {
     if (mossa == 3) {
         cout << "\nPareggio!";
         cout << "\nIl tuo avversario aveva scelto: " << mossa2;
-        p1++;
-        p2++;
+        round--;
     } else if (mossa == 2) {
         cout << "\nHai vinto!";
         cout << "\nIl tuo avversario aveva scelto: " << mossa2;
@@ -105,7 +102,7 @@ switch (i) {
     }
 }
     cout << "\n\tPARTITA TERMINATA!!";
-    cout << "\n\nIl tuo punteggio: " << p1 << "\nIl punteggio del tuo avversario: " << p2;
+    cout << "\n\tIl tuo punteggio: " << p1 << "\nIl punteggio del tuo avversario: " << p2;
 
     return 0;
 }

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Perricci"/>
+        <attribute name="authors" value="ospite"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-26 11:05:05 "/>
+        <attribute name="created" value="b3NwaXRlO1BOSTE3OzIwMjUtMDMtMTk7IjEwOjM2OjUwICI7MjE4Nw=="/>
+        <attribute name="edited" value="b3NwaXRlO1BOSTE3OzIwMjUtMDMtMjY7IjEwOjEzOjQwICI7MjsyMjg4"/>
+        <attribute name="edited" value="dXRlbnRlO0RFU0tUT1AtMEo3MzVBVTsyMDI1LTAzLTI2OyIxMTowNTowNSAiOzE7Mjk3MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N, sommaQuad, i" type="Integer" array="False" size=""/>
+            <assign variable="sommaQuad" expression="0"/>
+            <do expression="N&lt;1">
+                <output expression="&quot;Scrivi un numero intero positivo&quot;" newline="True"/>
+                <input variable="N"/>
+            </do>
+            <for variable="i" start="1" end="N" direction="inc" step="1">
+                <assign variable="sommaQuad" expression="sommaQuad + i^2"/>
+            </for>
+            <output expression="&quot;La somma dei quadrati dei numeri da 1 a &quot;&amp; N &amp;&quot; &#232; &quot;&amp;sommaQuad" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

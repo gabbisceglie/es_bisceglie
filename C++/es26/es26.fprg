@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="es26"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-09 10:51:03 "/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLVVORDdBNTA7MjAyNS0wNC0wOTsiMTA6MTE6MzEgIjsyNjM0"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLVVORDdBNTA7MjAyNS0wNC0wOTsiMTA6NTE6MDMgIjsyOzI3NDY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <do expression="n&lt;0">
+                <output expression="&quot;Inserire un numero intero positivo: &quot;" newline="True"/>
+                <input variable="n"/>
+            </do>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <if expression="i%5==0">
+                    <then>
+                        <output expression="&quot;&#55357;&#57077;&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="i" newline="True"/>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

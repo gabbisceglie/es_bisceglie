@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="es25"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-09 07:36:14 "/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLVVORDdBNTA7MjAyNS0wNC0wOTsiMDc6Mjk6MTYgIjsyNjUy"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLVVORDdBNTA7MjAyNS0wNC0wOTsiMDc6MzY6MTQgIjsxOzI3NTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <do expression="n&lt;0">
+                <output expression="&quot;Inserire un numero intero positivo: &quot;" newline="True"/>
+                <input variable="n"/>
+            </do>
+            <output expression="&quot;I quadrati perfetti da 1 a &quot; &amp; n &amp; &quot;sono &quot;" newline="True"/>
+            <do expression="i*i&lt;=n">
+                <output expression="i*i" newline="True"/>
+                <assign variable="i" expression="i+1"/>
+            </do>
+        </body>
+    </function>
+</flowgorithm>

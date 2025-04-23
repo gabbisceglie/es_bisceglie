@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="es27"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-23 04:25:26 "/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLVVORDdBNTA7MjAyNS0wNC0yMzsiMDQ6MTA6MDggIjsyNjM2"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLVVORDdBNTA7MjAyNS0wNC0yMzsiMDQ6MjU6MjYgIjsxOzI3NTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="moltiplicatore, moltiplicando, prodotto, i" type="Integer" array="False" size=""/>
+            <assign variable="prodotto" expression="0"/>
+            <do expression="moltiplicatore &lt;= 0">
+                <output expression="&quot;Inserire moltiplicatore: &quot;" newline="True"/>
+                <input variable="moltiplicatore"/>
+            </do>
+            <do expression="moltiplicando &lt;= 0">
+                <output expression="&quot;Inserire moltiplicando: &quot;" newline="True"/>
+                <input variable="moltiplicando"/>
+            </do>
+            <for variable="i" start="1" end="moltiplicatore" direction="inc" step="1">
+                <assign variable="prodotto" expression="prodotto+moltiplicando"/>
+            </for>
+            <output expression="&quot;Il prodotto &#232; &quot; &amp; prodotto" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

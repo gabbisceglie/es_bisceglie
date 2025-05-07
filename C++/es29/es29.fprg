@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="es29"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-07 12:43:29 "/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLVVORDdBNTA7MjAyNS0wNS0wNzsiMTI6Mzc6NDUgIjsyNjQ4"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLVVORDdBNTA7MjAyNS0wNS0wNzsiMTI6NDM6MjkgIjsxOzI3NTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserire il primo numero: &quot;" newline="True"/>
+            <input variable="n1"/>
+            <call expression="somma(n1)"/>
+        </body>
+    </function>
+    <function name="somma" type="None" variable="">
+        <parameters>
+            <parameter name="n1" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="n2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserire secondo numero: &quot;" newline="True"/>
+            <input variable="n2"/>
+            <output expression="&quot;La somma &#232; &quot; &amp; n1+n2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -3,9 +3,8 @@ using namespace std;
 
 //Funzione che calcola il quadrato di un numero
     void calcolo(int n) {
-        cout << "Il quadrato di " << n << " e': " << n * n << endl;
+        cout << "Il quadrato di " << n << " e': " << n * n;
     }
-
 
 int main() {
 

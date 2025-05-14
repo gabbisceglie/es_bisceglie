@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="es31"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-14 04:06:59 "/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLVVORDdBNTA7MjAyNS0wNS0xNDsiMDM6NTM6NDYgIjsyNjQ1"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLVVORDdBNTA7MjAyNS0wNS0xNDsiMDQ6MDY6NTkgIjsxOzI3NTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sconto, somma, nprodotti, prezzo, i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <assign variable="somma" expression="0"/>
+            <assign variable="sconto" expression="20"/>
+            <output expression="&quot;Inserisci il numero di prodotti: &quot;" newline="True"/>
+            <input variable="nprodotti"/>
+            <for variable="i" start="0" end="nprodotti-1" direction="inc" step="1">
+                <output expression="&quot;Inserire prezzo prodotto: &quot;" newline="True"/>
+                <input variable="prezzo"/>
+                <call expression="calcolo(somma, sconto, prezzo)"/>
+            </for>
+            <output expression="&quot;La somma di tutti i prodotti scontati e' &quot; &amp; somma" newline="True"/>
+        </body>
+    </function>
+    <function name="calcolo" type="Integer" variable="somma">
+        <parameters>
+            <parameter name="somma" type="Integer" array="False"/>
+            <parameter name="sconto" type="Integer" array="False"/>
+            <parameter name="prezzo" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <assign variable="somma" expression="somma+(prezzo-(prezzo*sconto/100))"/>
+        </body>
+    </function>
+</flowgorithm>

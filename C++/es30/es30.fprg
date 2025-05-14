@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="es30"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-10 04:26:16 "/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLVVORDdBNTA7MjAyNS0wNS0xMDsiMDQ6MjA6NTQgIjsyNjM1"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLVVORDdBNTA7MjAyNS0wNS0xMDsiMDQ6MjY6MTYgIjsxOzI3NDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="prezzo, sconto" type="Integer" array="False" size=""/>
+            <assign variable="sconto" expression="20"/>
+            <output expression="&quot;Inserire il prezzo del prodotto: &quot;" newline="True"/>
+            <input variable="prezzo"/>
+            <call expression="calcolo(prezzo, sconto)"/>
+            <output expression="&quot;Il prezzo finale con lo sconto e': &quot; &amp; calcolo(prezzo, sconto)" newline="True"/>
+        </body>
+    </function>
+    <function name="calcolo" type="Integer" variable="prezzo">
+        <parameters>
+            <parameter name="prezzo" type="Integer" array="False"/>
+            <parameter name="sconto" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <assign variable="prezzo" expression="prezzo -(prezzo*sconto/100)"/>
+        </body>
+    </function>
+</flowgorithm>

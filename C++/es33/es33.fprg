@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="es33"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-27 07:31:12 "/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLVVORDdBNTA7MjAyNS0wNS0yNzsiMDc6MjQ6MDQgIjsyNjQ1"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLVVORDdBNTA7MjAyNS0wNS0yNzsiMDc6MzE6MTIgIjsxOzI3NTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="anno" type="Integer" array="False" size=""/>
+            <call expression="annoValido(anno)"/>
+            <call expression="maggiorEta(anno)"/>
+        </body>
+    </function>
+    <function name="annoValido" type="Integer" variable="anno">
+        <parameters>
+            <parameter name="anno" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <do expression="anno&lt;=1900 and anno&gt;=2025">
+                <output expression="&quot;Inserisci anno: &quot;" newline="True"/>
+                <input variable="anno"/>
+            </do>
+        </body>
+    </function>
+    <function name="maggiorEta" type="None" variable="">
+        <parameters>
+            <parameter name="anno" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <assign variable="anno" expression="2025-anno"/>
+            <if expression="anno&gt;=18">
+                <then>
+                    <output expression="&quot;Sei maggiorenne&quot;" newline="True"/>
+                    <output expression="&quot;Hai &quot; &amp; anno &amp; &quot; anni&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Sei minorenne&quot;" newline="True"/>
+                    <output expression="&quot;Hai &quot; &amp; anno &amp; &quot; anni&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
